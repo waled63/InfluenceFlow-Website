@@ -66,15 +66,24 @@ export default function Navbar({ onContactClick }: NavbarProps) {
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           
-          {/* Left: Minimal Elegant Logo */}
+          {/* Left: Serif Logo Badge & Dual Weight Wordmark */}
           <div 
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="flex items-center gap-1.5 cursor-pointer"
+            className="flex items-center gap-3 cursor-pointer select-none group"
           >
-            <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-            <span className="font-sans font-medium text-xs tracking-[0.2em] text-white uppercase">
-              InfluenceFlow
-            </span>
+            <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center shadow-[0_4px_12px_rgba(255,255,255,0.15)] transition-transform duration-300 group-hover:scale-105">
+              <span className="text-black font-serif font-extrabold text-[13px] leading-none tracking-tight select-none pt-[1px]">
+                IF
+              </span>
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="font-sans font-extrabold text-[11px] tracking-[0.2em] text-white uppercase">
+                INFLUENCE
+              </span>
+              <span className="font-sans font-light text-[11px] tracking-[0.2em] text-white/50 uppercase">
+                FLOW
+              </span>
+            </div>
           </div>
 
           {/* Center: Understated Nav Links */}

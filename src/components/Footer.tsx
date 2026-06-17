@@ -12,12 +12,21 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         
         {/* Left Side: Brand & status */}
-        <div className="flex flex-col items-center md:items-start gap-1">
-          <div className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 bg-white/60 rounded-full animate-pulse" />
-            <span className="font-sans font-medium text-xs tracking-widest text-white uppercase">
-              InfluenceFlow
-            </span>
+        <div className="flex flex-col items-center md:items-start gap-2.5">
+          <div className="flex items-center gap-2.5">
+            <div className="w-6 h-6 rounded bg-white flex items-center justify-center shadow-lg">
+              <span className="text-black font-serif font-extrabold text-[10px] leading-none pt-[0.5px] select-none">
+                IF
+              </span>
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="font-sans font-extrabold text-[10px] tracking-[0.2em] text-white uppercase">
+                INFLUENCE
+              </span>
+              <span className="font-sans font-light text-[10px] tracking-[0.2em] text-white/55 uppercase">
+                FLOW
+              </span>
+            </div>
           </div>
           <span className="font-mono text-[8px] text-white/30 lowercase tracking-wider">
             dfy growth infrastructure &bull; all engines active

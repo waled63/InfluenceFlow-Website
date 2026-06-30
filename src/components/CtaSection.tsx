@@ -18,10 +18,10 @@ export default function CtaSection({ onStartCampaignClick }: CtaSectionProps) {
         
         {/* Simple visual microtag */}
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="inline-flex items-center gap-2 mb-8"
         >
           <span className="font-mono text-[9px] text-[#A6A6AB] tracking-[0.3em] uppercase">
@@ -31,10 +31,10 @@ export default function CtaSection({ onStartCampaignClick }: CtaSectionProps) {
 
         {/* Big centered emotional text */}
         <motion.h2
-          initial={{ opacity: 0, y: 18 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.1 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans font-medium text-4xl sm:text-5xl md:text-6xl tracking-[-0.03em] leading-[1.1] text-white mb-8"
         >
           Let’s build your <br />
@@ -42,10 +42,10 @@ export default function CtaSection({ onStartCampaignClick }: CtaSectionProps) {
         </motion.h2>
 
         <motion.p
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans font-light text-[#8E8E93] text-sm sm:text-base max-w-[500px] mx-auto leading-relaxed mb-12 tracking-wide"
         >
           No complex contracts or vague vanity reports. Just direct, high-efficiency technical creator campaigns managed entirely for your product.
@@ -53,10 +53,10 @@ export default function CtaSection({ onStartCampaignClick }: CtaSectionProps) {
 
         {/* Tactile button trigger */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.3 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col items-center gap-4 w-full"
         >
           <button

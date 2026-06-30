@@ -43,8 +43,8 @@ export default function StorytellingSection() {
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center gap-3 mb-10 md:mb-16 text-left"
         >
           <span className="font-mono text-[9px] text-[#A6A6AB] tracking-[0.3em]">01 / METHOD</span>
@@ -55,20 +55,20 @@ export default function StorytellingSection() {
         {/* Section Title */}
         <div className="mb-16 md:mb-24 text-left max-w-2xl">
           <motion.h2
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="font-sans font-medium text-3xl sm:text-4xl md:text-5xl tracking-[-0.03em] text-white leading-[1.15]"
           >
             A complete marketing pipeline.<br />
             <span className="text-[#8E8E93] font-light">From strategy to direct execution.</span>
           </motion.h2>
           <motion.p
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="font-sans font-light text-[#8E8E93] text-sm sm:text-base mt-6 leading-relaxed max-w-xl"
           >
             We operate as an extension of your growth team, taking care of the operational workload so your founders and engineers can stay entirely focused on building product.
@@ -82,10 +82,10 @@ export default function StorytellingSection() {
             return (
               <motion.div
                 key={step.id}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.8, delay: 0.15 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
                 className="p-6 bg-white/[0.015] hover:bg-white/[0.03] border border-white/5 hover:border-white/10 rounded-2xl transition-all duration-300 flex flex-col justify-between h-full group"
               >
                 <div>

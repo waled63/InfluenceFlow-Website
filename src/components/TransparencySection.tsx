@@ -35,8 +35,8 @@ export default function TransparencySection() {
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center gap-3 mb-10 md:mb-16 text-left"
         >
           <span className="font-mono text-[9px] text-[#A6A6AB] tracking-[0.3em]">03 / OUR POSITION</span>
@@ -47,10 +47,10 @@ export default function TransparencySection() {
         {/* Headline */}
         <div className="mb-16 md:mb-24 text-left max-w-3xl">
           <motion.h2
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="font-sans font-medium text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.03em] text-white leading-[1.1]"
           >
             We are early-stage.<br />
@@ -64,30 +64,30 @@ export default function TransparencySection() {
           {/* Paragraph copy (Left Column) */}
           <div className="col-span-1 lg:col-span-7 flex flex-col space-y-7 text-left">
             <motion.p 
-               initial={{ opacity: 0, y: 15 }}
+               initial={{ opacity: 0, y: 20 }}
                whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true, margin: "-40px" }}
-               transition={{ duration: 0.6 }}
+               viewport={{ once: true, margin: "-80px" }}
+               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                className="font-sans font-medium text-white text-base sm:text-lg md:text-xl leading-relaxed"
             >
               We don't buy legacy databases or recycle generic campaign metrics. We launched <span className="text-white underline decoration-white/20 underline-offset-4">InfluenceFlow</span> with a single focus: to execute direct, high-impact technical influencer campaigns without agent bloat or overhead.
             </motion.p>
 
             <motion.p 
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="font-sans font-light text-[#8E8E93] text-sm sm:text-base leading-relaxed"
             >
               We strictly cap our active partner roster to three brands at any given time. This guarantees that your campaigns receive undivided expert focus. We personally handle developer sourcing, write custom high-context briefings, and deploy tailored post-click tracking.
             </motion.p>
 
             <motion.p 
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="font-sans font-light text-[#8E8E93] text-sm sm:text-base leading-relaxed"
             >
               No lengthy procurement cycles. No vague vanity parameters like estimated reach or impressions. Just direct action, absolute transparency, and clean, technical campaign execution.
@@ -109,8 +109,8 @@ export default function TransparencySection() {
                     key={principle.title}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true, margin: "-40px" }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true, margin: "-80px" }}
+                    transition={{ duration: 0.8, delay: 0.2 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
                     className="p-5 bg-white/[0.015] hover:bg-white/[0.03] border border-white/5 hover:border-white/10 rounded-2xl transition-all duration-300 text-left space-y-2 group"
                   >
                     <div className="flex items-center gap-3">

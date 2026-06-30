@@ -48,8 +48,8 @@ export default function FeaturesSection() {
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center gap-3 mb-10 md:mb-16"
         >
           <span className="font-mono text-[9px] text-[#A6A6AB] tracking-[0.3em]">02 / CORE CAPABILITIES</span>
@@ -61,10 +61,10 @@ export default function FeaturesSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-20">
           <div className="col-span-1 lg:col-span-7">
             <motion.h2
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="font-sans font-medium text-3xl sm:text-4xl md:text-5xl tracking-[-0.03em] text-white leading-[1.12]"
             >
               Growth infrastructure, <br />
@@ -73,10 +73,10 @@ export default function FeaturesSection() {
           </div>
           <div className="col-span-1 lg:col-span-5">
             <motion.p
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="text-xs font-sans font-light text-[#8E8E93] leading-relaxed max-w-[420px]"
             >
               We streamline the entire creator-led channel so you can harvest clean attention, conversion pipelines, and permanent brand authority.
@@ -91,10 +91,10 @@ export default function FeaturesSection() {
             return (
               <motion.div
                 key={feat.id}
-                initial={{ opacity: 0, y: 15 }}
+                initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.6, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.8, delay: 0.15 + index * 0.1, ease: [0.16, 1, 0.3, 1] }}
                 className="group p-6 rounded-2xl bg-white/[0.015] border border-white/[0.04] hover:border-white/10 hover:bg-white/[0.025] transition-all duration-300 flex flex-col justify-between cursor-pointer"
               >
                 <div>
